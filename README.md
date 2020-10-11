@@ -15,7 +15,7 @@ Goals to achieve for the code are:
 Pizza describes a pizza with a size and optional toppings.  The price depends on size and number of toppings.  For example, large pizza is 280 Baht plus 30 Baht per topping.
 ```python
 pizza = Pizza('large')
-pizza.addTopping("muchroom")
+pizza.addTopping("mushroom")
 pizza.addtopping("pineapple")
 print("The price is", pizza.getPrice())
 'The price is 340'
@@ -285,9 +285,7 @@ There are two refactorings for this:
 2. *Delegate to a Strategy* - pricing varies but sizes rarely change, so define a separate class to compute pizza price. 
     (Design principle: "*Separate the parts that vary from the parts that stay the same*")
 
-## Reading
+## References
 
-* Refactoring chapter in *Code Complete* 2nd Edition. Good overview but not much code.
-* *Refactoring - Improving the Design of Existing Code* by Martin Fowler.  The bible on refactoring.  The first 4 chapters explain the fundamentals.
-* https://refactoring.com. Online version of Fowler's book, very little detail.
-* [Enumerations](https://docs.python.org/3/library/enum.html) in Python Library docs.
+* The [Refactoring](https://cpske.github.io/ISP/refactoring/) course topic has suggested references.
+* *Refactoring: Improving the Design of Existing Code* by Martin Fowler is the bible on refactoring.  The first 4 chapters explain the fundamentals.
